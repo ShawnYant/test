@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+#line{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(51,51,51);
+}
+.span{
+    width: 50px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    border-radius:5px;
+    margin-right: 10px;
+    float: right;
+    color: #fff;
+    margin-top: 10px;
+}
+#bar{
+    width: 900px;
+    height: 70px;
+    border: 1px solid #cccccc;
+    border-radius:5px;
+    margin: 0 auto;
+}
+#bar li{
+    width: 150px;
+    height: 70px;
+    float: left;
+    line-height: 70px;
+    font-size: 20px;
+    text-align: center;
+}
+#bar li:hover{
+    color: rgb(255,104,30);
+    cursor: pointer;
+}
+
+#bar img{
+    float: right;
+    width: 70px;
+    height: 71px;
+}
+span:hover{
+    color: #ddd;
+}
+
+
+/*movePic*/
+#movePic{
+    width: 100%;
+    height: 450px;
+    border: 1px solid #000;
+    position: relative;
+}
+#movePic img{
+    width: 100%;
+    height: 450px;
+}
+#movePic span{
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid orangered;
+    border-radius:50%;
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    color: orangered;
+    cursor: pointer;
+}
+#movePic span:hover{
+    background-color: rgba(244,244,244,0.2);
+}
+#movePic #left{
+    top: 50%;
+    margin-top: -22px;
+    left: 25px;
+}
+#movePic #right{
+    top: 50%;
+    margin-top: -22px;
+    right: 25px;
+}
+
+/*movePic*/

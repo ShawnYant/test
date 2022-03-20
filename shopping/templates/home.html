@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{#{% block 主体 %}#}
+{#    {% for phone in 所有商品 %}#}
+{#        {{ phone.name }}#}
+{#        <br>#}
+{#        {{ phone.info }}#}
+{#        <br>#}
+{#        <img src="{{ phone.picture.url }}" alt="手机图片">#}
+{#        <br>#}
+{#    {% endfor %}#}
+{#{% endblock 主体 %}#}
+{% block 主体 %}
+    <div id="movePic">
+        <img src="{% static "images/lunbo1.jpg" %}" alt="">
+        <span id="left"> < </span>
+        <span id="right"> > </span>
+    </div>
+{% endblock 主体 %}

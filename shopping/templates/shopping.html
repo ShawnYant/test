@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 主体 %}
+    {% for leibie,shangpin in content_list %}
+        <h2>{{ leibie.name }}</h2>
+        {% for a in shangpin %}
+{#            <h3>{{ a.name }}</h3>#}
+            <h3><a href="{% url 'shop:details' leibie.id a.id %}"> {{ a.name }}</a></h3>
+            <p>{{ a.info }}</p>
+            <br>
+            <img src="{{ a.picture.url }}" alt="{{ a.name }}">
+            <br>
+            <h4>{{ a.price }}元</h4>
+            <br>
+        {% endfor %}
+
+    {% endfor %}
+    
+{% endblock 主体 %}

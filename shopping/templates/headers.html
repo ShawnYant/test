@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/headers.css' %}">
+<header>
+    <div id="line">
+        <span class="span"><a href="{% url 'shop:login' %}">登录</a> </span>
+        <span class="span"><a href="{% url 'shop:register' %}">注册</a> </span>
+    </div>
+{#    <nav>#}
+{#        <ul id="bar">#}
+{#            <li><a href="{% url 'shop:shopping' %}">所有手机</a> </li>#}
+{#            <li>品牌周边</li>#}
+{#            <li>社区服务</li>#}
+{#            <li>服务支持</li>#}
+{#            <img src="{% static "images/xiaomilogo.png" %}" alt="">#}
+{#        </ul>#}
+{#    </nav>#}
+{#    <div id="movePic">#}
+{#        <img src="{% static "images/lunbo1.jpg" %}" alt="">#}
+{#        <span id="left"> < </span>#}
+{#        <span id="right"> > </span>#}
+{#    </div>#}
+
+</header>
+<script src="{% static "js/headers.js" %}"></script>

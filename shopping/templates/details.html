@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 主体 %}
+    <h2>{{ goods1.name }}</h2>
+    <p>{{ goods1.info }}</p>
+    <br>
+    <img src="{{ goods1.picture.url }}" alt="{{ goods1.name }}">
+    <br>
+    <h4>{{ goods1.price }}元</h4>
+    <br>
+    <h4>{{ goods1.num }}</h4>
+    <h4>{{ goods1.onlinedate }}</h4>
+{% endblock 主体 %}

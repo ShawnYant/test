@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{% block 关键字 %}
+    手机，华为，中兴，小米，vivo，oppo
+    {% endblock 关键字 %}">
+    <meta name="keywords" content="{% block 网页描述 %}
+    这里是各种手机信息网站
+    {% endblock 网页描述 %}">
+    <meta name="keywords" content="{% block 网页标题 %}
+    手机商城
+    {% endblock 网页标题 %}">
+    <title>手机之家</title>
+</head>
+<body>
+
+    {% include "headers.html" %}
+    {% include "nav.html" %}
+    <main>
+        {% block 主体 %}
+            这是网页主体
+        {% endblock 主体 %}
+    </main>
+    {% include "footer.html" %}
+</body>
+</html>

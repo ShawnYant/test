@@ -1,0 +1,15 @@
+{% load static %}
+<nav>
+        <ul id="bar">
+            <li><a href="{% url 'shop:index' %}">首页</a> </li>
+            <li><a href="{% url 'shop:shopping' %}">所有手机</a> </li>
+            {% for leibie in allcategories %}
+                <li><a href="{% url 'shop:specific' leibie.id %}">{{ leibie.name }}</a></li>
+            {% endfor %}
+
+{#            <li>品牌周边</li>#}
+{#            <li>社区服务</li>#}
+{#            <li>服务支持</li>#}
+            <img src="{% static "images/xiaomilogo.png" %}" alt="">
+        </ul>
+    </nav>
