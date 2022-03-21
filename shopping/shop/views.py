@@ -3,11 +3,15 @@ from .models import *
 from django.contrib.auth import login,logout,authenticate
 from django.contrib.auth.forms import UserCreationForm
 from .forms import *
+import requests
+
+    
 
 # Create your views here.
 def index(request):
-    content = {'所有商品': product.objects.all()}
-    return render(request,'home.html')
+    response = requests.get('https://medber.herokuapp.com/medicines').json()
+    
+    return render(request,'home.html',{'response':response})
 
 def denglu(request):
     if request.method == 'POST':

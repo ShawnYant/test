@@ -1,19 +1,10 @@
-{% extends "base.html" %}
-{% load static %}
-{#{% block 主体 %}#}
-{#    {% for phone in 所有商品 %}#}
-{#        {{ phone.name }}#}
-{#        <br>#}
-{#        {{ phone.info }}#}
-{#        <br>#}
-{#        <img src="{{ phone.picture.url }}" alt="手机图片">#}
-{#        <br>#}
-{#    {% endfor %}#}
-{#{% endblock 主体 %}#}
+        {% extends "base.html" %}
+        {% load static %}
+        
 {% block 主体 %}
-    <div id="movePic">
-        <img src="{% static "images/lunbo1.jpg" %}" alt="">
-        <span id="left"> < </span>
-        <span id="right"> > </span>
-    </div>
-{% endblock 主体 %}
+        
+        <h1>List of medicines</h1>
+        {% for i in response.data %}
+           <strong>{{i.medicine_name}}</strong>
+           {% endfor %}
+        {% endblock 主体 %}
